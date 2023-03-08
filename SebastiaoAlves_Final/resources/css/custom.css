@@ -1,0 +1,234 @@
+:root {
+    --gold: #b47d33;
+}
+body {
+    font-family: "IBM Plex", sans-serif;
+    color: #4d4d4d;
+}
+p {
+    color: #707070;
+}
+a:hover {
+    color: var(--gold);
+}
+.nav-link:hover {
+    color: var(--gold);
+}
+.gold {
+    color: var(--gold) !important;
+}
+.bg-gold {
+    background: var(--gold) !important;
+}
+.lato {
+    font-family: "Lato", sans-serif;
+    color: #4d4d4d;
+}
+.font-ibm {
+    font-family: "IBM Plex Sans", sans-serif;
+}
+.titleText {
+    font-family: "IBM Plex Sans", sans-serif;
+    text-align: center;
+    font-weight: bold;
+    padding-top: 15px;
+}
+.z-index {
+    z-index: 1;
+}
+
+.headerAndNav {
+    height: 730px;
+}
+.line {
+    height: 1px;
+    width: 90%;
+    background: black;
+    margin: auto;
+}
+
+.dropdown-menu {
+    border-radius: 0;
+    border: none;
+    min-width: 250px;
+}
+
+.dropdown-item:focus,
+.dropdown-item:hover {
+    color: var(--gold);
+    background-color: #f8f9fa;
+}
+
+.dropdown-menu div {
+    padding: 1rem 0.4rem;
+}
+
+.dropdown-item {
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin: 0.4rem 0;
+    font-family: "IBM Plex Sans", sans-serif;
+}
+
+.caro-box {
+    position: relative;
+}
+.caro-box h1 {
+    font-family: "IBM Plex Sans", sans-serif;
+    font-weight: 300;
+}
+.Cbtn {
+    padding: 0.5rem 2rem;
+    background: var(--gold);
+    color: white;
+    border: none;
+    font-size: 0.9rem;
+}
+.Cbtn:hover {
+    background-color: #707070;
+    color: white;
+}
+
+.slider-img {
+    background-size: cover;
+    height: 100%;
+    max-height: 100%;
+    width: 100%;
+    position: absolute;
+    background-position-y: 30%;
+}
+.carousel-item {
+    height: 730px;
+}
+.indicators-style {
+    right: unset;
+    left: 2%;
+    bottom: 20%;
+    margin-left: 5%;
+}
+.carousel-dark .carousel-indicators [data-bs-target] {
+    background: grey;
+    border: 1px solid grey;
+}
+.carousel-indicators [data-bs-target] {
+    height: 20px;
+    width: 20px;
+    border: 1px solid black;
+    border-radius: 40px;
+}
+.carousel-dark {
+    position: absolute;
+    top: 0;
+}
+.carousel-control-next,
+.carousel-control-prev {
+    display: none;
+}
+.caro-box p {
+    font-size: 0.9rem;
+}
+
+.shadow {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+.shadow-box {
+    box-shadow: 0px 6px 5px 0px rgb(225, 225, 225);
+    height: 60px;
+    margin-bottom: 50px;
+}
+.icon:hover {
+    filter: grayscale(0.7);
+}
+.page-btns a:hover {
+    filter: invert(60%) sepia(13%) saturate(5634%) hue-rotate(1deg)
+        brightness(85%) contrast(61%);
+}
+.dropdown-toggle::after {
+    display: none;
+}
+
+.card {
+    border-radius: 0;
+}
+
+.card-text {
+    height: 215px;
+}
+
+.livro-contain {
+    width: 350px;
+    height: 445px;
+}
+@media screen and (min-width: 992px) {
+    .caro-box {
+        width: 45%;
+        margin-left: 5%;
+    }
+    .flex-gap {
+        gap: 40px;
+    }
+    .slider-img {
+        background-position: bottom;
+    }
+    .card {
+        width: 30%;
+        margin-top: 20px;
+    }
+    .first-container {
+        top: -60px;
+        max-width: 100%;
+        width: 85%;
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    .slider-img {
+        background-position: 60%;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .paginator ul {
+        width: 100% !important;
+    }
+    .dropdown-menu div {
+        box-shadow: 0px 0px 10px 0px rgb(175 175 175) !important;
+    }
+    .dropdown-menu.show {
+        display: contents;
+    }
+    .navbar-color {
+        background: white;
+        max-height: 0;
+        overflow: hidden;
+        padding: 0;
+        transition: 250ms;
+    }
+
+    .show .navbar-color {
+        max-height: 900px;
+        padding: 1.5rem;
+    }
+
+    #navbarMenu {
+        width: 100%;
+        transition-duration: 0.5s;
+    }
+
+    .indicators-style {
+        left: 0;
+        bottom: 5%;
+    }
+    .caro-box {
+        bottom: 10%;
+    }
+    .card {
+        width: 75%;
+        margin: 10px auto;
+    }
+
+    .livro-contain {
+        width: 100%;
+        text-align: center;
+    }
+}
