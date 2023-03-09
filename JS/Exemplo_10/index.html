@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ghost's nd Stuff</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/main.js"></script>
+  </head>
+  <body id="bckg">
+    <header>
+      <div id="tema">
+        <button onclick="alterarClasses()">Kikas<br />La Siesta</button>
+      </div>
+      <nav></nav>
+    </header>
+
+    <br /><br />
+
+    <main>
+      <h1>Profanity is the one language understood by all programmers.</h1>
+      <form>
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" required autofocus /><br /><br />
+        <label for="idade">Idade:</label>
+        <input type="number" id="idade" required /><br /><br />
+        <label for="peso">Peso:</label>
+        <input type="number" id="peso" required /><br /><br />
+        <label for="altura">Altura:</label>
+        <input type="number" id="altura" required /><br /><br />
+        <button type="button" onclick="mostrarDados()">Mostrar dados</button>
+      </form>
+      <div id="dadosUsuario"></div>
+    </main>
+
+    <br /><br />
+  </body>
+</html>

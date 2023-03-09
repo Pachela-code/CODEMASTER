@@ -1,0 +1,86 @@
+body{
+    min-height: 100vh;
+    background: linear-gradient(to top right, cyan, greenyellow, violet);
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    font-family: "Teste";
+}
+
+.cor1{
+    background: linear-gradient(to right, #f6b00a, #d48308, #f6330a);
+    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.3);
+}
+
+/*
+.cor2{
+    background: linear-gradient(to right, #f6b00a, #d48308, #f6330a);
+    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.3);
+}
+
+.cor3{
+    background: linear-gradient(to right, #f6b00a, #d48308, #f6330a);
+    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.3);
+}
+*/
+
+.caixa1{
+    color: rgba(100, 100, 100, 90%);
+    border-radius: 10px;
+    background: linear-gradient(135deg, #F2EF1D, #FCE31E, #E6BD27, #FCB61E, #F2991D);
+    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.3);
+}
+
+.caixa2{
+    color: rgba(75, 75, 75, 90%);
+    border-radius: 10px;
+    /*background: linear-gradient(to right, rgba(255,255,255,0.25), rgba(255,255,255,0.40), rgba(255,255,255,0.55));*/
+    background-color: rgba(255, 255, 255, 0.3);
+    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.3);
+}
+
+.caixa3{
+    color: rgba(100, 100, 100, 90%);
+    border-radius: 10px;
+    background: linear-gradient(to right, #F625B8, #C020D4, #A42EEB);
+    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.3);
+}
+
+input[type="text"], input[type="number"], input[type="time"], input[type="date"], select, textarea{
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 60%);
+    border: 0px;
+    text-align: center;
+}
+
+button, input[type="submit"]{
+    color: black !important;
+    background-color: rgba(255, 255, 255, 60%);
+    border-radius: 5px;
+    border: 1px solid white;
+    padding: 5px 15px;
+    transition-duration: 0.5s;
+}
+
+input[type="submit"].active{
+    background-color: #f6b00a;
+}
+
+button:hover, input[type="submit"]:hover{
+    background-color: white;
+    font-weight: bold;
+    padding: 10px 20px;
+}
+
+table, th, td{
+    border: 3px solid white;
+    border-collapse: collapse;
+}
+
+th{
+    text-transform: uppercase;
+}
+
+pre{
+    text-align: left;
+}

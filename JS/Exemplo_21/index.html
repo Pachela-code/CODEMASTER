@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Baliza numeros e Cores Aleatorias</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/main.js"></script>
+
+    <style>
+      .cores-da-moda {
+        width: 80px;
+        height: 80px;
+        background-color: rgb(24, 23, 23);
+        margin: 20px;
+        display: inline-flex;
+      }
+    </style>
+  </head>
+
+  <body>
+    <form>
+      <label for="min">Valor Mínimo:</label>
+      <input type="number" id="min" name="min" /><br />
+
+      <label for="max">Valor Máximo:</label>
+      <input type="number" id="max" name="max" /><br />
+
+      <button type="button" onclick="gerarNumero()">Gerar Número</button>
+    </form>
+
+    <p id="resultado"></p>
+
+    <hr />
+    <br /><br />
+
+    <button style="height: 100px; margin-right: 15%" onclick="mudarCor()">
+      Aperta aqui !!
+    </button>
+
+    <div class="cores-da-moda"></div>
+    <div class="cores-da-moda"></div>
+    <div class="cores-da-moda"></div>
+    <div class="cores-da-moda"></div>
+    <div class="cores-da-moda"></div>
+    <div class="cores-da-moda"></div>
+    <div class="cores-da-moda"></div>
+    <div class="cores-da-moda"></div>
+    <div class="cores-da-moda"></div>
+    <div class="cores-da-moda"></div>
+  </body>
+</html>

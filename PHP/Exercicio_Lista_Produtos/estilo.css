@@ -1,0 +1,13 @@
+table, tr, th, td{
+    border-collapse: collapse;
+    border: 3px solid black;
+}
+
+th{
+    text-transform: uppercase;
+}
+
+td{
+    width: 150px;
+    text-align: center;
+}

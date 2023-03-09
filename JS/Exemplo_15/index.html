@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ghost's nd Stuff</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/main.js"></script>
+
+    <style>
+      .password-icon {
+        position: absolute;
+        right: 35%;
+        top: 50%;
+        transform: translateY(-50%);
+        cursor: pointer;
+      }
+      .password-icon img {
+        height: 2em;
+        width: 2em;
+        vertical-align: middle;
+        border-radius: 12px;
+      }
+    </style>
+  </head>
+
+  <body id="bckg">
+    <br /><br />
+
+    <main>
+      <form>
+        <label for="username">Nome de usuário:</label>
+        <br /><br />
+        <input type="text" id="username" name="username" /><br /><br />
+        <label for="password">Senha:</label>
+        <div style="position: relative">
+          <input
+            type="password"
+            id="password"
+            name="password"
+            onmouseover="mostrarPassword()"
+            onmouseout="esconderPassword()"
+          />
+          <span class="password-icon" onclick="mostrarPassword()">
+            <img src="fechado.jpg" alt="esconder senha" id="password-icon" />
+          </span>
+        </div>
+        <br /><br />
+        <input type="submit" value="Aceder" />
+      </form>
+    </main>
+
+    <br /><br />
+  </body>
+</html>

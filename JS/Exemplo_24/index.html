@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cor e Texto - Cookies</title>
+
+    <script src="js/main.js"></script>
+  </head>
+
+  <body style="text-align: center">
+    <form action="">
+      <label for="titulo">Título:</label>
+      <input type="text" id="titulo" name="titulo" /><br />
+
+      <label for="ano">Ano:</label>
+      <input type="text" id="ano" name="ano" /><br />
+
+      <label for="duracao">Duração:</label>
+      <input type="text" id="duracao" name="duracao" /><br />
+
+      <label for="nota">Nota da crítica:</label>
+      <select id="nota" name="nota">
+        <option value="0">0 estrelas</option>
+        <option value="1">1 estrela</option>
+        <option value="2">2 estrelas</option>
+        <option value="3">3 estrelas</option>
+        <option value="4">4 estrelas</option>
+        <option value="5">5 estrelas</option></select
+      ><br />
+
+      <button type="button" onclick="inserirFilme()">Inserir Filme</button>
+    </form>
+
+    <div id="lista-filmes"></div>
+  </body>
+</html>

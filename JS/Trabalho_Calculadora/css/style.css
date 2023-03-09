@@ -1,0 +1,234 @@
+body {
+  min-height: 100vh;
+  background: linear-gradient(
+    to top right,
+    rgb(49, 49, 59),
+    rgb(59, 74, 126),
+    rgb(187, 11, 11)
+  );
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-family: "Teste";
+}
+
+main,
+h1 {
+  text-align: center;
+}
+
+.cor1 {
+  background: linear-gradient(to right, #f6b00a, #d48308, #f6330a);
+  box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.3);
+}
+
+/*
+.cor2{
+    background: linear-gradient(to right, #f6b00a, #d48308, #f6330a);
+    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.3);
+}
+
+.cor3{
+    background: linear-gradient(to right, #f6b00a, #d48308, #f6330a);
+    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.3);
+}
+*/
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.result-container {
+  margin-top: 50px;
+  border: 1px solid black;
+  border-radius: 50px;
+  width: 20%;
+  height: 20%;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  display: inline-table;
+}
+
+.calculator {
+  width: 400px;
+  height: 650px;
+  background-color: hsl(201, 98%, 80%);
+  border-radius: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+.input-container {
+  width: 100%;
+  height: 50px;
+  background-color: white;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 10px;
+}
+
+.button {
+  width: 50px;
+  height: 50px;
+  background-color: white;
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.caixa1 {
+  color: rgba(100, 100, 100, 90%);
+  border-radius: 10px;
+  background: linear-gradient(
+    135deg,
+    #f2ef1d,
+    #fce31e,
+    #e6bd27,
+    #fcb61e,
+    #f2991d
+  );
+  box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.3);
+}
+
+.caixa2 {
+  color: rgba(75, 75, 75, 90%);
+  border-radius: 10px;
+  /*background: linear-gradient(to right, rgba(255,255,255,0.25), rgba(255,255,255,0.40), rgba(255,255,255,0.55));*/
+  background-color: rgba(255, 255, 255, 0.3);
+  box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.3);
+}
+
+.caixa3 {
+  color: rgba(100, 100, 100, 90%);
+  border-radius: 10px;
+  background: linear-gradient(to right, #f625b8, #c020d4, #a42eeb);
+  box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.3);
+}
+
+input[type="text"],
+input[type="password"],
+input[type="number"],
+input[type="time"],
+input[type="date"],
+select,
+textarea {
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 60%);
+  border: 0px;
+  text-align: center;
+}
+
+button {
+  margin-top: 20px;
+}
+
+button,
+input[type="submit"] {
+  color: black !important;
+  background-color: rgba(255, 255, 255, 60%);
+  border-radius: 5px;
+  border: 1px solid white;
+  padding: 5px 15px;
+  transition-duration: 0.5s;
+}
+
+button.active,
+input[type="submit"].active {
+  background-color: rgba(255, 196, 0, 0.8);
+}
+
+button:disabled,
+input[type="submit"]:disabled,
+button:disabled:hover,
+input[type="submit"]:disabled:hover {
+  background-color: rgba(150, 150, 150, 75%);
+  color: rgb(200, 200, 200) !important;
+  border: 1px solid rgb(200, 200, 200);
+  padding: 5px 15px;
+}
+
+input[type="submit"].active {
+  background-color: #f6b00a;
+}
+
+button:hover,
+input[type="submit"]:hover {
+  background-color: white;
+  font-weight: bold;
+  padding: 10px 20px;
+}
+
+table,
+th,
+td {
+  border: 3px solid white;
+  border-collapse: collapse;
+}
+
+th {
+  text-transform: uppercase;
+}
+
+pre {
+  text-align: left;
+}
+
+.capa {
+  width: 100% !important;
+  height: 20vw !important;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+nav > a {
+  text-decoration: none;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: 1px solid white;
+  padding: 10px 20px;
+  border-radius: 10px;
+  text-transform: bold;
+  font-size: 18px;
+}
+
+#tema {
+  position: absolute;
+  right: 10px;
+}
+
+#tema > button {
+  cursor: pointer;
+}
+
+footer > div {
+  display: flex;
+  align-items: center;
+  height: 50px;
+}
+
+#resultado {
+  margin-top: 50px;
+  color: white;
+  font-size: 30px;
+}
+
+#kelvin,
+#fahrenheit {
+  color: white;
+  font-size: 50px;
+}

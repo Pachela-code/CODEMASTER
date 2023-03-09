@@ -1,0 +1,17 @@
+.imagem{
+    width: 200px;
+}
+
+.titulo{
+    font-size: 21px;
+    text-align: center;
+}
+
+.texto{
+    text-align: justify;
+}
+
+#perfil-user{
+    background-color: rgba(178, 207, 225, 40%);
+    border-color: rgba(135, 207, 252, 0.6) !important;
+}

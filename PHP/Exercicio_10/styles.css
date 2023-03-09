@@ -1,0 +1,15 @@
+body {
+  text-align: center;
+}
+
+form {
+  display: inline-block;
+}
+
+input[type="text"] {
+  width: 100px;
+}
+
+img {
+  width: 200px;
+}

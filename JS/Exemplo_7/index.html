@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Teste</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/main.js"></script>
+  </head>
+  <body id="bckg">
+    <header>
+      <div id="tema">
+        <button onclick="alterarClasses()">Kikas<br />La Siesta</button>
+      </div>
+      <h1>Javascript</h1>
+      <nav></nav>
+    </header>
+
+    <br /><br />
+
+    <main>
+      <h1>Aumento Ordenado</h1>
+      <div>
+        <label for="ordenado">Ordenado:</label>
+        <input type="number" id="ordenado" required="required" />
+      </div>
+      <div>
+        <label for="incremento">Incremento (%):</label>
+        <input type="number" id="incremento" required="required" />
+      </div>
+      <div>
+        <button onclick="calculaOrdenado()">Calcular</button>
+      </div>
+      <div id="resultado">
+        <!-- Resultado será exibido aqui -->
+      </div>
+    </main>
+
+    <br /><br />
+  </body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cor e Texto - Cookies</title>
+
+    <script src="js/main.js"></script>
+  </head>
+
+  <body style="text-align: center">
+    <form action="">
+      <label for="cor">Cor de fundo:</label>
+      <input type="color" id="cor" name="cor" />
+      <button onclick="mudarCor(event)">Mudar Cor</button>
+    </form>
+
+    <br /><br />
+
+    <form action="">
+      <label for="texto">Escreva:</label>
+      <input type="text" id="texto" name="texto" />
+      <button onclick="escreverTexto(event)">Digite</button>
+    </form>
+    <br /><br />
+
+    <div id="resultado"></div>
+
+    <script>
+      verificarCookies();
+    </script>
+  </body>
+</html>
