@@ -27,3 +27,5 @@ http://127.0.0.1:8000/login
 
 username: admin@mail.com
 password: password
+
+--- ZIP FILE IS BETTER TO CHECK THE CODE ---
